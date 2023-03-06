@@ -1,0 +1,171 @@
+.header_game {
+    margin: 24px 0 64px;
+    display: flex;
+
+    &--logo {
+        @extend .unselectable;
+        margin: 6px 25px 0 0;
+        width: 71px;
+        height: 32px;
+    }
+
+    &--turn {
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $rgb-semi-dark-navy;
+        border-radius: 10px;
+        box-shadow: 0 4px $shadow-dark;
+        width: 96px;
+        height: 40px;
+
+        &--player {
+            margin-right: 9px;
+            width: 19px;
+            height: 19px;
+        }
+        
+        &--txt {
+            @extend .unselectable;
+            color: $rgb-dark-white;
+            font-size: 16px;
+            font-weight: 700;
+            letter-spacing: 0.88;
+            text-align: center;
+        }
+    }
+    
+    &--restart {
+        @extend .unselectable;
+        margin-left: 53px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $rgb-dark-white;
+        border-radius: 10px;
+        box-shadow: 0 4.50px $shadow-grey;
+        width: 40px;
+        height: 40px;
+        @extend .hover_white;
+    }
+}
+
+.grile {
+    margin-bottom: 25px;
+    display: grid;
+    grid-template-areas: "a a a";
+    grid-gap: 20px;
+    grid-auto-rows: 96px;
+
+    &--case {
+        @extend .hover_outline_x;
+        background-image: url('images\icon-x-outline.svg');
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $rgb-semi-dark-navy;
+        border-radius: 10px;
+        box-shadow: 0 8px $shadow-dark;
+        width: 96px;
+        cursor: pointer;
+    }
+}
+
+.round {
+    display: flex;
+
+    &--p1 {
+        margin-right: auto;
+        background-color: $rgb-light-blue;
+        @extend .size_round;
+    }
+
+    &--ties {
+        margin: auto;
+        background-color: $rgb-dark-white;
+        @extend .size_round;
+    }
+
+    &--p2 {
+        margin-left: auto;
+        background-color: $rgb-light-yellow;
+        @extend .size_round;
+    }
+
+    .size_round {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        width: 96px;
+        height: 64px;
+        border-radius: 10px;
+    }
+
+    .ground_txt {
+        @extend .unselectable;
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    .counteurs {
+        @extend .unselectable;
+        font-size: 20px;
+        font-weight: 900;
+    }
+}
+
+@media (min-width: 768px) {
+    .header_game {
+        margin: 70px 0 20px;
+
+        &--logo {
+            margin: 12px 35px 0 0;
+        }
+
+        &--turn {
+            width: 140px;
+            height: 52px;
+
+            &--player {
+                margin-right: 13px;
+                width: 24px;
+                height: 24px;
+            }
+
+            &--txt {
+                font-size: 16px;
+                letter-spacing: 1.5px;
+            }
+        }
+
+        &--restart {
+            width: 52px;
+            height: 52px;
+        }
+    }
+
+    .grile {
+        grid-auto-rows: 140px;
+
+        &--case {
+            width: 140px;
+        }
+    }
+
+    .round {
+
+        .size_round {
+            width: 140px;
+            height: 72px;
+        }
+
+        .ground_txt {
+            font-size: 14px;
+        }
+
+        .counteurs {
+            font-size: 24px;
+        }
+    }
+}

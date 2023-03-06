@@ -1,0 +1,45 @@
+.unselectable {
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+// HOVER
+
+.hover_yellow:hover {
+    background-color: $rgb-light-yellow;
+}
+.hover_blue:hover {
+    background-color: $rgb-light-blue;
+}
+.hover_white:hover {
+    background-color: $rgb-white;
+}
+
+// MENU
+#x_button_player_active {
+    background-image: url(../images/icon-x-player-black.svg);
+    background-color: $rgb-dark-white;
+}
+
+#x_button_player_inactife {
+    background-color: none;
+}
+
+#o_button_player_active {
+    background-image: url(../images/icon-o-player-black.svg);
+    background-color: $rgb-dark-white;
+}
+
+#o_button_player_inactife {
+    background-color: none;
+}
+
+
+// GAME
+
+.hover_outline_x {
+    background-image: url(images\icon-x-outline-hover.svg);
+}

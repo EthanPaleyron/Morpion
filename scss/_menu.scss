@@ -1,0 +1,130 @@
+.logo {
+    margin: 119px auto 32px;
+}
+
+.menu {
+    margin: auto;
+    background-color: $rgb-semi-dark-navy;
+    border-radius: 15px;
+    box-shadow: 0 10px 0 0 $shadow-dark;
+    padding: 18px;
+    width: 327px;
+    height: 205px;
+
+    &--txt {
+        @extend .unselectable;
+        font-size: 16px;
+        color: $rgb-dark-white;
+        font-weight: bold;
+    }
+
+    &--bouton {
+        margin: 30px auto 25px;
+        background-color: $rgb-dark-navy;
+        border-radius: 10px;
+        height: 72px;
+        width: 279px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &--x {
+            background-image: url(../images/icon-x-player-white.svg);
+            @extend .boutons_xo;
+            cursor: pointer;
+
+            &:hover {
+                background-color: $rgb-grey-a;
+            }
+        }
+
+        &--o {
+            background-image: url(../images/icon-o-player-white.svg);
+            @extend .boutons_xo;
+            cursor: pointer;
+
+            &:hover {
+               background-color: $rgb-grey-a;
+            }
+        }
+
+        .boutons_xo {
+            background-repeat: no-repeat;
+            background-position: center;
+            border-radius: 10px;
+            background-size: 32px;
+            height: 54px;
+            width: 131px;
+        }
+    }
+
+    &--txt_2 {
+        @extend .unselectable;
+        color: $rgb-dark-white;
+        font-size: 14px;
+        letter-spacing: 0.88px;
+    }
+}
+
+.bouton_play {
+    margin: 35px;
+    display: grid;
+
+    &--new_game {
+        border-radius: 15px;
+        width: 327px;
+        height: 46px;
+
+        &--txt {
+            @extend .unselectable;
+            font-size: 15px;
+            font-weight: 700;
+            letter-spacing: 1.25px;
+        }
+    }
+
+}
+    .vs_cpu {
+        background-color: $rgb-yellow;
+        box-shadow: 0 8px 0 0 $shadow-rgb-yellow;
+        @extend .hover_yellow;
+        cursor: pointer;
+    }
+
+    .vs_player {
+        margin-top: 20px;
+        background-color: $rgb-blue;
+        box-shadow: 0 8px 0 0 $shadow-rgb-blue;
+        @extend .hover_blue;
+        cursor: pointer;
+    }
+     
+
+@media (min-width: 768px) {
+    .logo {
+        margin-top: 185px;
+    }
+
+    .menu {
+        width: 460px;
+
+        &--bouton {
+            width: 412px;
+        }
+
+        .boutons_xo {
+            width: 194px;
+        }
+    }
+
+    .bouton_play {
+
+        &--new_game {
+            width: 460px;
+
+            &--txt {
+                font-size: 20px;
+            }
+        }
+    }
+}

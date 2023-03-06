@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+  <head>
+    <link rel="stylesheet" lang="sass" href="./scss/style.scss">
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png+xml" href="images\favicon-32x32.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Morpion_Game</title>
+  </head>
+
+  <body>
+
+  <header class="header_game">
+    <img class="header_game--logo" src="images\logo.svg" alt="images">
+    <article class="header_game--turn">
+      <img class="header_game--turn--player" src="images/icon-x-player-white.svg" alt="images">
+      <h3 class="header_game--turn--txt">TURN</h3>
+    </article>
+    <button class="header_game--restart"><img src="images/icon-restart.svg" alt="images"></button>
+  </header>
+
+  <section class="grile">
+    <button class="grile--case"><div class="grile--case--player"></div></button>
+    <button class="grile--case"><div class="grile--case--player"></div></button>
+    <button class="grile--case"><div class="grile--case--player"></div></button>
+    <button class="grile--case"><div class="grile--case--player"></div></button>
+    <button class="grile--case"><div class="grile--case--player"></div></button>
+    <button class="grile--case"><div class="grile--case--player"></div></button>
+    <button class="grile--case"><div class="grile--case--player"></div></button>
+    <button class="grile--case"><div class="grile--case--player"></div></button>
+    <button class="grile--case"><div class="grile--case--player"></div></button>
+  </section>
+
+  <section class="round">
+    <article class="round--p1"><p class="ground_txt">X (P1)<br><span class="counteurs">0</span></p></article>
+    <article class="round--ties"><p class="ground_txt">TIES<br><span class="counteurs">0</span></p></article>
+    <article class="round--p2"><p class="ground_txt">O (P2)<br><span class="counteurs">0</span></p></article>
+  </section>
+
+  <script type="module" src="js/game.js"></script>
+  </body>
+</html>

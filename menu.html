@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+  <head>
+    <link rel="stylesheet" lang="sass" href="./scss/style.scss">
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png+xml" href="images\favicon-32x32.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Morpion_Menu</title>
+  </head>
+
+  <body>
+
+      <img class="logo" src="images\logo.svg" alt="images">
+
+      <article class="menu">
+        <h2 class="menu--txt">PICK PLAYER 1’S MARK</h2>
+          <button class="menu--bouton">
+            <div id="active_x" class="menu--bouton--x"></div>
+            <div id="active_o" class="menu--bouton--o"></div>
+          </button>
+        <h3 class="menu--txt_2">REMEMBER : X GOES FIRST</h3>
+      </article>
+
+      <section class="bouton_play">
+        <a href="game.html">
+          <button class="bouton_play--new_game vs_cpu"><h3 class="bouton_play--new_game--txt">NEW GAME (VS CPU)</h3></button>
+        </a>
+
+        <a href="game.html?player=xo">
+          <button class="bouton_play--new_game vs_player"><h3 class="bouton_play--new_game--txt">NEW GAME  (VS PLAYER)</h3></button>
+        </a>
+      </section>
+
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>

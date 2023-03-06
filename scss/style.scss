@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200&family=Plus+Jakarta+Sans:wght@700&display=swap');
+
+// LINK SCSS
+
+@import 'variables';
+@import 'fuction';
+
+@import 'menu';
+@import 'game';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Outfit', sans-serif;
+}
+
+html {
+  background-color: $rgb-dark-navy;
+  display: grid;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+button { border: none; }
+a { text-decoration: none; color: black; }
